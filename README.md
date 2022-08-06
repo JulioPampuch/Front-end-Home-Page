@@ -1,1 +1,1 @@
-Home page from a bmx store using HTML and CSS.
+Home page responsive from a bmx store using HTML and CSS.
