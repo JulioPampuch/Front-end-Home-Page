@@ -1,0 +1,246 @@
+.secao__produtos {
+    margin: 20px auto;
+}
+
+.lista__produtos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    list-style-type: none;
+}
+
+.titulo__produtos {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    margin: 10px auto;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: white;
+
+    text-align: left;
+
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.64);
+}
+
+.link__produto {
+    text-decoration: none;
+}
+
+.produto:hover {
+    transform: scale(1.03);
+    transition: 100ms;
+}
+
+.base__imagem {
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.imagem__produto {
+    width: 70%;
+
+    margin: 0 auto;
+}
+
+.tipo__produto {
+    font-size: .7rem;
+    color: var(--produto-titulo-color);
+
+    margin: 5px 10px;
+}
+
+.titulo__produto {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--produto-titulo-color);
+
+    margin: 1px 10px;
+}
+
+.base__preco {
+    margin: 15% 0 0 0;
+    display: block;
+}
+
+.preco__principal {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--produto-preco-color);
+
+    margin: 8px 10px;
+}
+
+.preco__vista {
+    margin: 8px 10px 1px 10px;
+    color: var(--produto-preco-color);
+}
+
+.preco__parcelado {
+    font-size: .8rem;
+    color: var(--produto-preco-color);
+
+    margin: 1px 10px 5px 10px;
+}
+
+.input__quantidade {
+    width: 12.75%;
+    margin-left: 7.75px;
+}
+
+.base__botao__comprar {
+    display: flex;
+    justify-content: center;
+
+    text-align: right;
+    margin: 15px 5px;
+}
+
+.botao__comprar {
+    width: 25%;
+
+    background-color: black;
+
+    text-decoration: none;
+    color: white;
+
+    padding: 12.75px 40px;
+
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 0) {
+
+    .titulo__produtos {
+        font-size: 4rem;
+        margin: 50px 0;
+    }
+
+    .produto {
+        width: calc(50% - 20px);
+        height: 800px;
+        
+        margin: 10px;
+    }
+
+    .base__imagem {
+        width: 100%;
+        height: 100%;
+    
+        margin: 0 auto;
+    }
+
+    .tipo__produto {
+        font-size: 1.25rem;
+    }
+
+    .titulo__produto {
+        font-size: 2rem;
+    }
+
+    .preco__principal {
+        font-size: 2.75rem;
+    }
+
+    .preco__vista {
+        font-size: 1.75rem;
+    }
+
+    .preco__parcelado {
+        font-size: 1.5rem;
+    }
+
+    .base__botao__comprar {
+        margin: 2px auto 15px auto;
+        text-align: center;
+    }
+
+    .botao__comprar {
+        font-size: 3rem;
+        text-align: center;
+
+        padding: 17.75px 120px;
+        margin: 0 auto;
+    }
+
+    .texto__botao {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 990px) {
+
+
+    .titulo__produtos {
+        font-size: 1rem;
+        margin: 10px auto;
+    }
+
+    .produto {
+        width: 170px;
+        height: 520px;
+
+        margin: 5px 5px;
+
+    }
+
+    .base__imagem {
+        width: 100%;
+        height: 200px;
+    
+        margin: 0 auto;
+    }
+
+    .tipo__produto {
+        font-size: .75rem;
+    }
+
+    .titulo__produto {
+        font-size: 1rem;
+    }
+
+    .preco__principal {
+        font-size: 1.5rem;
+    }
+
+    .preco__vista {
+        font-size: 1.25rem;
+    }
+
+    .preco__parcelado {
+        font-size: 1rem;
+    }
+
+    .base__botao__comprar {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .botao__comprar {
+        font-size: 1rem;
+        text-align: center;
+
+        padding: 12.75px 40px;
+        margin: 0 auto;
+    }
+
+    .texto__botao {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .produto {
+        width: calc(25% - 20px);
+    }
+}

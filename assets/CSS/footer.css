@@ -1,0 +1,88 @@
+.rodape {
+    background-color: var(--main-bg-color);
+
+    margin-top: 50px;
+}
+
+.rodape .container {
+    text-align: left;
+}
+
+.rodape__secao {
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    padding: 30px 0;
+}
+
+.titulo__rodape {
+
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 2.25rem;
+    color: var( --main-title-color);
+
+    padding: 50px 50px 50px 0;
+}
+
+.caixas__rodape {
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 20px;
+}
+
+.titulo__rodape__secundario {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--main-title-color);
+}
+
+.textos__rodape {
+    color: var(--main-text-color);
+    text-decoration: none;
+
+    margin: 5px 0;
+}
+
+@media screen and (min-width: 0) {
+    .rodape__secao {
+        flex-wrap: nowrap;
+
+        height: 100%;
+    }
+
+    .titulo__rodape {
+        font-size: 5rem;
+    }
+
+    .titulo__rodape__secundario {
+        font-size: 2.75rem;
+    }
+
+    .textos__rodape {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .rodape__secao {
+        flex-wrap: wrap;
+
+        height: 300px;
+    }
+
+    .titulo__rodape {
+        font-size: 2.25rem;
+    }
+
+    .titulo__rodape__secundario {
+        font-size: 1.15rem;
+    }
+
+    .textos__rodape {
+        font-size: 1rem;
+    }
+}

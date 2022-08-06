@@ -1,0 +1,94 @@
+.secao__videos {
+    position: relative;
+
+    width: 700px;
+    height: 450px;
+
+    margin: 5px auto 50px auto;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img__slide {
+    width: 100%;
+    height: 100%;
+
+}
+
+.titulo__slide {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.274);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    position: absolute;
+
+}
+
+.navegacao {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    
+    margin: 0 200px;
+    bottom: 5px;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+
+    margin: 0 4px;
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.bar:hover {
+    background: black;
+}
+
+.bar:checked {
+    background-color: black;
+}
+
+.slide-hide {
+    display: none;
+}
+
+.bar-ativo {
+    background-color: black;
+}
+
+@media screen and (min-width: 0) {
+    .secao__videos {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .secao__videos {
+        display: block;
+    }
+}

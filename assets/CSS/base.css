@@ -1,0 +1,36 @@
+:root {
+    --body-bg-color: #fafafa;
+
+    --main-bg-color: #1a1a1a;
+    --main-title-color: #ececec;
+    --main-text-color: #bdbdbd;
+
+    --banner-title-color: #1f0b0b;
+    --banner-text-color: #3a2424;
+
+    --produto-titulo-color: black;
+    --produto-preco-color: #0e0e0e;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--body-bg-color);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (min-width:0){
+    .container{
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container {
+        width: 60%;
+    }
+}
